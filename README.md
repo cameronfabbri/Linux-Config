@@ -1,2 +1,7 @@
-# gvim
-my own gvim rc for when I use a new computer
+# Linux Configs
+
+Multiple linux config files that I don't want to remake every time I go to a new computer.
+
+### gvimrc
+### vimrc
+### bashrc
