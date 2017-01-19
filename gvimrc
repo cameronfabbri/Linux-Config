@@ -1,5 +1,8 @@
-syntax enable
-colorscheme desert
+" Cameron Fabbri
+" gvimrc
+
+syntax enable      " enables syntax
+colorscheme desert " a good colorscheme
 set shiftwidth=3
 set tabstop=3
 set softtabstop=3
@@ -9,9 +12,9 @@ set showmatch
 set hlsearch
 :imap ii <Esc>
 set ai
+set si
 set autoindent
 set smartindent
-"imap <Return> <CR><CR><C-o>k<Tab>
 :command WQ wq
 :command Wq wq
 :command W w
