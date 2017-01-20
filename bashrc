@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# disable dumbass caps lock key
+setxkbmap -option caps:none
+
 # will extract any type of archive
 extract () {
    if [ -f $1 ] ; then
@@ -48,6 +51,13 @@ alias readme="clear; git add README*; git commit -m 'update readme'; git push"
 # For Go
 export GOPATH=$HOME/work
 export PATH=$PATH:$GOROOT/bin
+
+# CUDA stuff
+export LD_LIBRARY_PATH=/usr/local/cuda/lib:$LD_LIBRARY_PATH
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
+
 
 # If not running interactively, don't do anything
 case $- in
