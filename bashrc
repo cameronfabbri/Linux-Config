@@ -1,26 +1,19 @@
-<<<<<<< HEAD
 # Cameron Fabbri
 # Common bash things I use
+# Note this is not a .bashrc replacement, just useful things to add
 
 # My aliases
 alias rr='clear; cd ~/Research'
 alias gu='clear; git push'
 alias readme="clear; git add README*; git commit -m 'update readme'; git push"
-
-# quick git push
+alias diskspace="du -S | sort -n -r |more"
 alias update="clear; git add *; git commit -m 'update'; git push"
-
-# for my own scripts
-export PATH=${PATH}:/.bin
-=======
-# Note this is not a .bashrc replacement, just useful things to add
 
 # For your own scripts
 PATH="$HOME/bin:$PATH"
 
 # disable dumbass caps lock key
 setxkbmap -option caps:none
->>>>>>> d22c3bc9eb4cf6ce15eadd956cd0869840e7e2e8
 
 # will extract any type of archive
 extract () {
@@ -59,12 +52,3 @@ up(){
   cd $d
 }
 
-<<<<<<< HEAD
-=======
-
-# My aliases
-alias rr='clear; cd ~/Research'
-alias gu='clear; git push'
-alias readme="clear; git add README*; git commit -m 'update readme'; git push"
-alias diskspace="du -S | sort -n -r |more"
->>>>>>> d22c3bc9eb4cf6ce15eadd956cd0869840e7e2e8
