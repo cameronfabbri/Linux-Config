@@ -20,7 +20,7 @@ fu! PythonTemplate()
         call append(12, "def parse(argv):")
         call append(13, "    parser = argparse.ArgumentParser(argv)")
         call append(14, "    parser.add_argument(")
-        call append(15, "        '--', required=False, type=str,")
+        call append(15, "        '--seed', required=False, type=int, default=124,")
         call append(16, "        help='')")
         call append(17, "")
         call append(18, "    return parser.parse_args(argv[1:])")
@@ -83,6 +83,7 @@ let b:did_indent = 1
 map <silent> <F11>
 \    :call system("wmctrl -ir " . v:windowid . " -b toggle,fullscreen")<CR>
 
+set colorcolumn=80
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
